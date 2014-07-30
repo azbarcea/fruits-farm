@@ -1,0 +1,21 @@
+auth.conf
+environments/
+etckeeper-commit-post
+etckeeper-commit-pre
+fileserver.conf
+
+# Installed modules
+modules/apache
+modules/concat
+modules/puppetboard
+modules/python
+modules/stdlib
+modules/vcsrepo
+
+# Binaries fils
+modules/schedule/files/sample.war
+modules/all/files/sample.war
+
+# OS generated files
+*.dpkg-old
+
