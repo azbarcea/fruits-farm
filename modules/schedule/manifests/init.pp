@@ -1,5 +1,3 @@
-include apache
-
 class schedule{
 	schedule {"first":
 		range => "14:00 - 14:22",
@@ -57,20 +55,20 @@ class schedule{
 	}
 	elsif $hostname == "bluemoon"
 	{
-		package {"ensure apache2 is installed":
-				name => "apache2",
-				ensure => "installed"
-			}
+#		package {"ensure apache2 is installed":
+#				name => "apache2",
+#				ensure => "installed"
+#			}
 		
-		a2mod { "Enable proxy mod":
-		    name => "proxy",
-		    ensure => "present"
-		}
- 
-		a2mod { "Enable proxy_http mod":
-		    name => "proxy_http",
-		    ensure => "present"
-		}
+#		a2mod { "Enable proxy mod":
+#		    name => "proxy",
+#		    ensure => "present"
+#		}
+ #
+#		a2mod { "Enable proxy_http mod":
+#		    name => "proxy_http",
+#		    ensure => "present"
+#		}
  
 		apache::vhost { "bluemoon.swift.com":
 		    servername => "bluemoon.swift.com",
