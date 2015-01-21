@@ -1,0 +1,20 @@
+[foreman-plugins]
+name=Foreman plugins latest
+baseurl=http://yum.theforeman.org/plugins/latest/el7/$basearch
+enabled=0
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
+
+[foreman-plugins-source]
+name=Foreman plugins latest - source
+baseurl=http://yum.theforeman.org/plugins/lastest/el7/source
+enabled=0
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
+
+[foreman-plugins-nightly]
+name=Foreman plugins nightly
+baseurl=http://yum.theforeman.org/plugins/nightly/el7/$basearch
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-foreman
