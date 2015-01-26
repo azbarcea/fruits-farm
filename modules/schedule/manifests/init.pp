@@ -22,7 +22,7 @@ class schedule{
                 package {"ensure tomcat6 coors":
                                 name => 'tomcat6',
                                 schedule => "first",
-                                version => "7.0.29",
+                                version => "6.5.29",
                                 ensure => "installed"
                         }
                 file    {"install sample app for tomcat6":
